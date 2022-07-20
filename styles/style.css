@@ -1,0 +1,390 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* --------------
+   common style
+ -------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------
+       banner style
+    --------------------- */
+.banner-part{
+    margin-bottom: 110px;
+}
+.banner-contant{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #161616;
+    border-radius: 30px;
+    justify-items:center ;
+}
+.banner-info{
+    margin: 80px;
+}
+.banner-title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+.banner-inner p{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 25px 0;
+}
+.banner-button{
+    height: 48px;
+    width: 187px;
+    background-color: #DD0000;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    transition: .5s;
+}
+.banner-button:hover{
+    background-color: black;
+}
+.banner-button a, i{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.fa-solid{
+    padding-left: 10px;
+}
+.banner-photo img{
+    height: 613px;
+    width: 581px;
+}
+
+
+/* -------------------
+       blog style 
+---------------------*/
+
+.football-contant{
+    margin-bottom: 10px;
+}
+.football-items{
+    display: grid;
+    grid-template-columns: 312px auto;
+}
+.match-nav{
+    width: 100%;
+}
+.match-blogs{
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    justify-items: center;
+    grid-row: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+
+}
+.navber-details{
+    width: 252px;
+    height: 52px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 16px;
+    margin-top: 22px;
+}
+.navber-details:hover{
+    background-color: #DD0000;
+    transition: .6s;
+}
+.navber-details a{
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.blog{
+    background-color: #DD0000;
+}
+.blog a{
+    color: #FFFFFF;
+}
+
+.match-tranfar-live{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.transfar-details{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.thumbnail img{
+    width: 100%;
+}
+.Transfer-button{
+    height: 30px;
+    width: 110px;
+    font-weight: 500;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 15px 0 0 20px;
+}
+.Transfer-button a{
+    color: #161616;
+}
+.Transfer-title{
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0 0 20px;
+}
+.transfer-icon{
+    display: flex;
+    float: left;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.button{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+
+/* --------------
+   footer style
+  --------------- */
+footer{
+    background-color: #161616;
+}
+
+.footer-contant{
+    padding: 120px 0;
+    text-align: center;
+}
+.goal h2{
+    font-weight: 600px;
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+.footer-info a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #B9B9B9;;
+    padding: 0 30px;
+}
+hr{
+    margin-bottom: 30px;
+}
+.footer-icon{
+    margin-top: 40px;
+}
+.footer-icon a{
+    padding-left: 20px;
+}
+.footer-icon i{
+    border-radius: 50%;
+    border: 1px solid #0f2f44;
+    padding: 15px;
+}
+
+
+
+/* -----------------------
+      Upcoming Match style 
+    --------------------------*/
+.up-match-details{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap: 20px;
+    margin-bottom: 80px;
+}
+.up-match-items{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.team-flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.vs{
+    margin: 0 10px;
+}
+
+.match-info{
+    text-align: center;
+}
+
+.match-info h2{
+    font-size: 20px;
+    color: #161616;
+    padding-top: 20px;
+}
+.match-info p{
+    margin: 15px 0 10px 0;
+}
+
+
+
+/* -------------------
+        Media query
+    -------------------- */
+
+/* mobile view */
+
+@media only screen and (max-width:688px) {
+
+    /* banner-responsive */
+    .banner-part{
+        margin-bottom: 50px;
+    }
+    .banner-contant{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        width: 100%;
+    }
+    .banner-info{
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+    .banner-inner p{
+        display: none;
+    }
+    .banner-button{
+        margin-left: 170px;
+    }
+
+    /* football-contant-responsive */
+    .football-contant{
+        margin-bottom: 50px;
+    }
+    .football-items{
+        display: block;
+    }
+    .match-nav{
+        display: inline;
+    }
+    .match-blogs{
+        background-color: #FFFFFF;
+    }
+    .navber-details{
+        margin: 10px;
+        border: 2px solid #E8E8E8;
+    } 
+    .match-tranfar-live {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Transfer-title{
+        padding: 15px 300px 25px 0;
+    }
+    
+
+    /* footer responsive */
+    .footer-contant{
+        margin: 0;
+        padding: 35px 0;
+    }
+    .footer-info a {
+        padding: 15px 30px;
+        display: block;
+    }
+
+    /* Upcoming Match style  */
+    .up-match-details{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+
+/* ---------------------
+      tablet view 
+  ----------------------*/
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+     /* football-contant-responsive */
+     .football-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .match-blogs {
+        background-color: #ffff;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navber-details {
+        margin: 10px;
+        border: 2px solid #E8E8E8;
+        width: 80%;
+    }
+    .match-tranfar-live {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tablet-view{
+        display: none;
+    }
+
+    /* view all .button */
+    .button{
+        visibility: visible;
+    }
+    .button a{
+        height: 40px;
+        width: 180px;
+        background-color: red;
+        border-radius: 10px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 18px;
+        margin: 40px;
+    }
+
+    /* footer responsive */
+    .footer-contant{
+        background-color: #161616;
+        margin: 0;
+        padding: 35px 0;
+    }
+    .footer-info a {
+        padding: 15px 30px;
+    }
+
+    /* Upcoming Match style  */
+    .up-match-details{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
